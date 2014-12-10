@@ -21,3 +21,10 @@ function hr_themes_ctools_plugin_directory($module, $plugin) {
     return 'plugins/' . $plugin;
   }
 }
+
+/**
+ * Implements hook_views_api().
+ */
+function hr_themes_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
